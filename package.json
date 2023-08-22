@@ -1,0 +1,26 @@
+{
+  "name": "eva-functional-utils",
+  "version": "1.0.0",
+  "description": "lib with functions to help developing in a functional paradigm",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/botclimber/eva-functional-utils.git"
+  },
+  "author": "botclimber",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/botclimber/eva-functional-utils/issues"
+  },
+  "homepage": "https://github.com/botclimber/eva-functional-utils#readme",
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  },
+  "files": [
+    "/dist"
+  ],
+  "types": "dist/index.d.ts"
+}
