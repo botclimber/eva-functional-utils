@@ -1,1 +1,1 @@
-export {partition} from "./lib/partition"
+export {partition} from "./lib/partition/partition"
