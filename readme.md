@@ -4,7 +4,7 @@
 plain typescript dont have some data manipulation functions that are comonly used in the functional paradigm so the idea is to provide some functions suitable for the ones who use this paradigm.
 
 ## available functionalities
-1. partition
+1. [x] partition
     - creates new data structure depending on boolean result
     - example:
         ```
@@ -25,7 +25,7 @@ plain typescript dont have some data manipulation functions that are comonly use
          */
         ```
 
-2. Try (class)
+2. [x] Try (class)
     - bundle of Try Catch into a success failure data structure.
     - example:
         ```
@@ -44,23 +44,76 @@ plain typescript dont have some data manipulation functions that are comonly use
         })
         ```
 
-3. clean [in progress]  
+3. [x] clean 
     - clean data structure and persist only non falsy values
+    - example:
+    ```
+    const arr = [1,2,3,4, undefined, "", false, 5]
 
-4. takeLeft[in progress]
-    - remove n elements from begining
+    const result = clean(arr)
+    console.log(result)
 
-5. takeRight [in progress]
-    - remove n elements from end    
+    /** output
+        [1,2,3,4,5]
+    */
+    ```
 
-6. flatten [in progress]
+4. [x] takeLeft
+    - get n elements from begining
+    - example:
+    ```
+    const data = [1,2,3,4]
+
+    const result = takeLeft(data, 2)
+    console.log(result)
+
+    /** output
+        [1,2]
+    */
+    ```
+
+5. [x] takeRight
+    - get n elements from end
+    - example:
+    ```
+    const data = [1,2,3,4]
+
+    const result = takeRight(data, 2)
+    console.log(result)
+
+    /** output
+        [3,4]
+    */
+    ```   
+
+6. [ ] flatten (just use native flat() [Developer Mozilla page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat) )
     - decrement depth of data structure
 
-7. groupBy [in progress]
+7. [x] groupBy (also mentioned as experimental on [Developer Mozilla page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/groupBy))
     - group elements of a data struture based on a function
+    - example:
+    ```
+    const data = [
+        {name: "andre", age: 18},
+        {name: "rita", age: 19},
+        {name: "joao", age: 21},
+        {name: "rita", age: 52},
+    ]
 
-8. isEmpty [in progress]
-    - check if data structure is empty
+    const result = groupBy(data, (v) => v.name)
+    console.log(result)
+
+    /** output
+    {
+        andre: [ { name: 'andre', age: 18 } ],
+        rita: [ { name: 'rita', age: 19 }, { name: 'rita', age: 52 } ],
+        joao: [ { name: 'joao', age: 21 } ]
+    }
+    */
+    ```
+
+8. [x] isEmpty [in progress]
+    - check if data structure is empty, supported types are objects, collections, empty strings and falsy.
 
 9. zip [in progress]
     - rely on the position of multiple data structures and return it merged
