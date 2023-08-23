@@ -4,7 +4,7 @@
 plain typescript dont have some data manipulation functions that are comonly used in the functional paradigm so the idea is to provide some functions suitable for the ones who use this paradigm.
 
 ## available functionalities
-1. ![img](https://p1.hiclipart.com/preview/198/417/113/simply-styled-icon-set-731-icons-free-security-approved-green-check-signage-illustration-png-clipart.jpg) **partition**
+1. **partition**
     - creates new data structure depending on boolean result
     - example:
         ```
@@ -25,7 +25,7 @@ plain typescript dont have some data manipulation functions that are comonly use
          */
         ```
 
-2. ![img](https://p1.hiclipart.com/preview/198/417/113/simply-styled-icon-set-731-icons-free-security-approved-green-check-signage-illustration-png-clipart.jpg)  **Try**** (class)
+2. **Try** (class)
     - bundle of Try Catch into a success failure data structure.
     - example:
         ```
@@ -44,7 +44,7 @@ plain typescript dont have some data manipulation functions that are comonly use
         })
         ```
 
-3. ![img](https://p1.hiclipart.com/preview/198/417/113/simply-styled-icon-set-731-icons-free-security-approved-green-check-signage-illustration-png-clipart.jpg)  **clean**
+3. **clean**
     - clean data structure and persist only non falsy values
     - example:
     ```
@@ -58,7 +58,7 @@ plain typescript dont have some data manipulation functions that are comonly use
     */
     ```
 
-4. ![img](https://p1.hiclipart.com/preview/198/417/113/simply-styled-icon-set-731-icons-free-security-approved-green-check-signage-illustration-png-clipart.jpg)  **takeLeft**
+4. **takeLeft**
     - get n elements from begining
     - example:
     ```
@@ -72,7 +72,7 @@ plain typescript dont have some data manipulation functions that are comonly use
     */
     ```
 
-5. ![img](https://p1.hiclipart.com/preview/198/417/113/simply-styled-icon-set-731-icons-free-security-approved-green-check-signage-illustration-png-clipart.jpg)  takeRight
+5. **takeRight**
     - get n elements from end
     - example:
     ```
@@ -89,7 +89,7 @@ plain typescript dont have some data manipulation functions that are comonly use
 6. **flatten** (just use native flat() [Developer Mozilla page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat) )
     - decrement depth of data structure
 
-7. ![img](https://p1.hiclipart.com/preview/198/417/113/simply-styled-icon-set-731-icons-free-security-approved-green-check-signage-illustration-png-clipart.jpg)  **groupBy** (also mentioned as experimental on [Developer Mozilla page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/groupBy))
+7. **groupBy** (also mentioned as experimental on [Developer Mozilla page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/groupBy))
     - group elements of a data struture based on a function
     - example:
     ```
@@ -112,16 +112,16 @@ plain typescript dont have some data manipulation functions that are comonly use
     */
     ```
 
-8. ![img](https://p1.hiclipart.com/preview/198/417/113/simply-styled-icon-set-731-icons-free-security-approved-green-check-signage-illustration-png-clipart.jpg)  **isEmpty**
+8. **isEmpty**
     - check if data structure is empty, supported types are objects, collections, empty strings and falsy.
 
-9. ![img](https://icon-library.com/images/red-cross-icon-png/red-cross-icon-png-22.jpg) **zip** [in progress]
+9. **zip** [in progress]
     - rely on the position of multiple data structures and return it merged
 
-10. ![img](https://icon-library.com/images/red-cross-icon-png/red-cross-icon-png-22.jpg) **unzip** [in progress]
+10. **unzip** [in progress]
     - ungroups and return the generated multiple data structures
 
-11. ![img](https://icon-library.com/images/red-cross-icon-png/red-cross-icon-png-22.jpg) **asSet** [in progress]
+11. **asSet** [in progress]
     - return data structure without repeated values
 
 ## Author
