@@ -1,7 +1,15 @@
 {
   "name": "eva-functional-utils",
-  "version": "1.8.4",
+  "version": "1.8.5",
   "description": "Helper components for functional programming with Typescript (TS/JS) language.",
+  "keywords": [
+    "Typescript",
+    "Javascript",
+    "Functional Programming",
+    "TS",
+    "JS",
+    "Utils"
+  ],
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
