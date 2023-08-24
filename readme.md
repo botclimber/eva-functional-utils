@@ -5,8 +5,8 @@ Typescript dont have some data manipulation functions that are commonly used in 
 
 ## Available functionalities
 :white_check_mark: **partition**
-    - creates new data structure depending on boolean result
-    ```
+- creates new data structure depending on boolean result
+```
     // example
 
     const obj = [
@@ -23,12 +23,12 @@ Typescript dont have some data manipulation functions that are commonly used in 
             [{param1: "test1", param2: false }]
         ]
      */
-    ```
-
+```
+##
     
 :white_check_mark: **Try** (class)
-    - bundle of Try Catch into a success failure data structure.
-    ```
+- bundle of Try Catch into a success failure data structure.
+```
     // example
 
     const arr = [[0, 14], [20, 0], [3,2], [0, 0], [20, 10]]
@@ -44,12 +44,12 @@ Typescript dont have some data manipulation functions that are commonly used in 
         }
 
     })
-    ```
-
+```
+##
     
 :white_check_mark: **clean**
-    - clean data structure and persist only non falsy values
-    ```
+- clean data structure and persist only non falsy values
+```
     // example
 
     const arr = [1,2,3,4, undefined, "", false, 5]
@@ -60,12 +60,12 @@ Typescript dont have some data manipulation functions that are commonly used in 
     /** output
         [1,2,3,4,5]
     */
-    ```
-
+```
+##
     
 :white_check_mark: **takeLeft**
-    - get n elements from begining
-    ```
+- get n elements from begining
+```
     // example
 
     const data = [1,2,3,4]
@@ -76,12 +76,12 @@ Typescript dont have some data manipulation functions that are commonly used in 
     /** output
         [1,2]
     */
-    ```
-
+```
+##
     
 :white_check_mark: **takeRight**
-    - get n elements from end
-    ```
+- get n elements from end
+```
     // example
 
     const data = [1,2,3,4]
@@ -92,20 +92,18 @@ Typescript dont have some data manipulation functions that are commonly used in 
     /** output
         [3,4]
     */
-    ```   
+ ```   
+##
 
-    
 :warning: **flatten** 
-    > [!NOTE]
-    > Just use native flat() [Developer Mozilla page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat)
-    - decrement depth of data structure
+> Use native flat [Developer Mozilla page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat)
+- decrement depth of data structure
+##
 
-    
-:warning: **groupBy** 
-    > [!NOTE]
-    > Also mentioned as experimental on [Developer Mozilla page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/groupBy)
-    - group elements of a data struture based on a function
-    ```
+:white_check_mark: **groupBy** 
+> Also mentioned as experimental on [Developer Mozilla page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/groupBy)
+- group elements of a data struture based on a function
+```
     // example
     
     const data = [
@@ -125,23 +123,23 @@ Typescript dont have some data manipulation functions that are commonly used in 
         joao: [ { name: 'joao', age: 21 } ]
     }
     */
-    ```
-
+```
+##
     
 :white_check_mark: **isEmpty**
-    - check if data structure is empty, supported types are objects, collections, empty strings and falsy.
-
+- check if data structure is empty, supported types are objects, collections, empty strings and falsy.
+##
     
 :x: **zip** [in progress]
-    - rely on the position of multiple data structures and return it merged
-
+- rely on the position of multiple data structures and return it merged
+##
     
 :x: **unzip** [in progress]
-    - ungroups and return the generated multiple data structures
-   
+- ungroups and return the generated multiple data structures
+## 
 
 :x: **asSet** [in progress]
-    - return data structure without repeated values
+- return data structure without repeated values
 
     
 ## Author
