@@ -1,10 +1,10 @@
 # eva-functional-utils
 
 ## Purpose
-plain typescript dont have some data manipulation functions that are comonly used in the functional paradigm so the idea is to provide some functions suitable for the ones who use this paradigm.
+Typescript dont have some data manipulation functions that are commonly used in the functional paradigm so the idea is to provide some functions suitable for the ones who want to use this paradigm.
 
-## available functionalities
-1. :white_check_mark: **partition**
+## Available functionalities
+:white_check_mark: **partition**
     - creates new data structure depending on boolean result
     ```
     // example
@@ -25,7 +25,8 @@ plain typescript dont have some data manipulation functions that are comonly use
      */
     ```
 
-2. :white_check_mark: **Try** (class)
+    
+:white_check_mark: **Try** (class)
     - bundle of Try Catch into a success failure data structure.
     ```
     // example
@@ -45,7 +46,8 @@ plain typescript dont have some data manipulation functions that are comonly use
     })
     ```
 
-3. :white_check_mark: **clean**
+    
+:white_check_mark: **clean**
     - clean data structure and persist only non falsy values
     ```
     // example
@@ -60,7 +62,8 @@ plain typescript dont have some data manipulation functions that are comonly use
     */
     ```
 
-4. :white_check_mark: **takeLeft**
+    
+:white_check_mark: **takeLeft**
     - get n elements from begining
     ```
     // example
@@ -75,7 +78,8 @@ plain typescript dont have some data manipulation functions that are comonly use
     */
     ```
 
-5. :white_check_mark: **takeRight**
+    
+:white_check_mark: **takeRight**
     - get n elements from end
     ```
     // example
@@ -90,12 +94,14 @@ plain typescript dont have some data manipulation functions that are comonly use
     */
     ```   
 
-6. :warning: **flatten** 
+    
+:warning: **flatten** 
     > [!NOTE]
     > Just use native flat() [Developer Mozilla page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat)
     - decrement depth of data structure
 
-7. :warning: **groupBy** 
+    
+:warning: **groupBy** 
     > [!NOTE]
     > Also mentioned as experimental on [Developer Mozilla page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/groupBy)
     - group elements of a data struture based on a function
@@ -121,17 +127,22 @@ plain typescript dont have some data manipulation functions that are comonly use
     */
     ```
 
-8. :white_check_mark: **isEmpty**
+    
+:white_check_mark: **isEmpty**
     - check if data structure is empty, supported types are objects, collections, empty strings and falsy.
 
-9. :x: **zip** [in progress]
+    
+:x: **zip** [in progress]
     - rely on the position of multiple data structures and return it merged
 
-10. :x: **unzip** [in progress]
+    
+:x: **unzip** [in progress]
     - ungroups and return the generated multiple data structures
+   
 
-11. :x: **asSet** [in progress]
+:x: **asSet** [in progress]
     - return data structure without repeated values
 
+    
 ## Author
 botclimber by evaclue
