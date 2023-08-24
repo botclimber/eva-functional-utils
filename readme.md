@@ -6,48 +6,50 @@ plain typescript dont have some data manipulation functions that are comonly use
 ## available functionalities
 1. :white_check_mark: **partition**
     - creates new data structure depending on boolean result
-    - example:
-        ```
-        const obj = [
-            {param1: "test", param2: true },
-            {param1: "test1", param2: false },
-            {param1: "test2", param2: true },
-            ]
+    ```
+    // example
 
-        const result = partition(obj, (param) => param.param2)
-        console.log(result)
-        
-        /** output
-            [
-                [{param1: "test", param2: true },{param1: "test2", param2: true }]
-                [{param1: "test1", param2: false }]
-            ]
-         */
-        ```
+    const obj = [
+        {param1: "test", param2: true },
+        {param1: "test1", param2: false },
+        {param1: "test2", param2: true },
+        ]
+    const result = partition(obj, (param) => param.param2)
+    console.log(result)
+    
+    /** output
+        [
+            [{param1: "test", param2: true },{param1: "test2", param2: true }]
+            [{param1: "test1", param2: false }]
+        ]
+     */
+    ```
 
 2. :white_check_mark: **Try** (class)
     - bundle of Try Catch into a success failure data structure.
-    - example:
-        ```
-        const arr = [[0, 14], [20, 0], [3,2], [0, 0], [20, 10]]
+    ```
+    // example
 
-        const result = arr.map(r => Try.evaluate(() => divide(r[0], r[1])))
+    const arr = [[0, 14], [20, 0], [3,2], [0, 0], [20, 10]]
 
-        result.forEach(tries => {
+    const result = arr.map(r => Try.evaluate(() => divide(r[0], r[1])))
 
-            if(tries.itSucceed()){
-                console.log("Result:", tries.getOrElse(27));
-            }else{
-                console.log("Error:", tries.getError())
-            }
+    result.forEach(tries => {
 
-        })
-        ```
+        if(tries.itSucceed()){
+            console.log("Result:", tries.getOrElse(27));
+        }else{
+            console.log("Error:", tries.getError())
+        }
+
+    })
+    ```
 
 3. :white_check_mark: **clean**
     - clean data structure and persist only non falsy values
-    - example:
     ```
+    // example
+
     const arr = [1,2,3,4, undefined, "", false, 5]
 
     const result = clean(arr)
@@ -60,8 +62,9 @@ plain typescript dont have some data manipulation functions that are comonly use
 
 4. :white_check_mark: **takeLeft**
     - get n elements from begining
-    - example:
     ```
+    // example
+
     const data = [1,2,3,4]
 
     const result = takeLeft(data, 2)
@@ -74,8 +77,9 @@ plain typescript dont have some data manipulation functions that are comonly use
 
 5. :white_check_mark: **takeRight**
     - get n elements from end
-    - example:
     ```
+    // example
+
     const data = [1,2,3,4]
 
     const result = takeRight(data, 2)
@@ -95,8 +99,9 @@ plain typescript dont have some data manipulation functions that are comonly use
     > [!NOTE]
     > Also mentioned as experimental on [Developer Mozilla page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/groupBy)
     - group elements of a data struture based on a function
-    - example:
     ```
+    // example
+    
     const data = [
         {name: "andre", age: 18},
         {name: "rita", age: 19},

@@ -1,6 +1,6 @@
 {
   "name": "eva-functional-utils",
-  "version": "1.8.1",
+  "version": "1.8.2",
   "description": "lib with functions to help developing in a functional paradigm",
   "main": "dist/index.js",
   "scripts": {
