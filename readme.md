@@ -140,7 +140,10 @@ Typescript dont have some data manipulation functions that are commonly used in 
 
 :x: **asSet** [in progress]
 - return data structure without repeated values
+##
 
-    
+:x: **toMap** [in progress]
+- creates a map (New Map(key, value)) from an array
+
 ## Author
 botclimber by evaclue
