@@ -186,9 +186,9 @@ eva.[asSet, partition, zip, clean, ...]
 ```
     // example
     
-    const data = [1, 2, 3,3,3, 4, 5]
+    const data = [1, 2, 3, 3, 3, 4, 5]
 
-    const result = asSet(arr)
+    const result = asSet(data)
     console.log(result)
 
     /** output
