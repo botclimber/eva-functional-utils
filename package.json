@@ -1,6 +1,6 @@
 {
   "name": "eva-functional-utils",
-  "version": "1.8.5",
+  "version": "1.8.6",
   "description": "Helper components for functional programming with Typescript (TS/JS) language.",
   "keywords": [
     "Typescript",

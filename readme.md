@@ -3,6 +3,19 @@
 ## Purpose
 Typescript dont have some data manipulation functions that are commonly used in the functional paradigm so the idea is to provide some functions suitable for the ones who want to use this paradigm.
 
+## Instalation
+Using npm:
+```
+$ npm i eva-functional-utils
+```
+
+In TS file:
+```
+import * as eva from "eva-functional-utils"
+
+eva.[asSet, partition, zip, clean, ...]
+```
+
 ## Available functionalities
 :white_check_mark: **partition**
 - creates new data structure depending on boolean result
@@ -130,16 +143,60 @@ Typescript dont have some data manipulation functions that are commonly used in 
 - check if data structure is empty, supported types are objects, collections, empty strings and falsy.
 ##
     
-:x: **zip** [in progress]
+:white_check_mark: **zip**
 - rely on the position of multiple data structures and return it merged
+```
+    // example
+    
+    const arr1 = [1,2,3] 
+    const arr2 = ['a', 'b']
+    const arr3 = [true, false]
+
+    const result = zip(arr1, arr2, arr3)
+    console.log(result)
+
+    /** output
+    
+    [[1, 'a', true], [2, 'b', false], [3, undefined, undefined]]
+
+    */
+```
 ##
     
-:x: **unzip** [in progress]
+:white_check_mark: **unzip**
 - ungroups and return the generated multiple data structures
+```
+    // example
+    
+    const arr = [[1, 'a', true], [2, 'b', false], [3, undefined, undefined]]
+
+    const result = unzip(arr)
+    console.log(result)
+
+    /** output
+    
+    [[1, 2, 3], ['a', 'b', 'c'], [true, false]]
+
+    */
+```
 ## 
 
-:x: **asSet** [in progress]
+:white_check_mark: **asSet**
 - return data structure without repeated values
+```
+    // example
+    
+    const data = [1, 2, 3,3,3, 4, 5]
+
+    const result = asSet(arr)
+    console.log(result)
+
+    /** output
+    
+    [1, 2, 3, 4, 5]
+
+    */
+```
 ##
 
 :x: **toMap** [in progress]
