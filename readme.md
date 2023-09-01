@@ -199,8 +199,8 @@ eva.[asSet, partition, zip, clean, ...]
 ```
 ##
 
-:x: **getOrElse**
-> not tested for more then one depth object structure
+:white_check_mark: **getOrElse**
+> dont handle any depth or wrong order of parameters
 - Try to gets object or simple value from an array by key,value pair or single value 
 ```
     // example
