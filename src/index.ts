@@ -8,3 +8,4 @@ export {takeRight} from "./lib/takeRight/takeRight";
 export {asSet} from "./lib/asSet/asSet";
 export {zip} from "./lib/zip/zip";
 export {unzip} from "./lib/unzip/unzip";
+export {getOrElse} from "./lib/getOrElse/getOrElse";

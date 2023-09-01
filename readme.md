@@ -199,6 +199,31 @@ eva.[asSet, partition, zip, clean, ...]
 ```
 ##
 
+:x: **getOrElse**
+> not tested for more then one depth object structure
+- Try to gets object or simple value from an array by key,value pair or single value 
+```
+    // example
+    
+    const simpleArr = [1,2,3,4]
+    const arrOfObjects = [{id: 1, text: "test 1"}, {id: 2, text: "test 2"}, {id: 3, text: "test 3"}, {id: 4, text: "test 4"}];
+    const arrOfObjectsWithDepth = [{id: 1, text: {param1: 1, param2: "test 1"}}, {id: 2, text: {param1: 2, param2: "test 2"}}, {id: 3, text: {param1: 3, param2: "test 3"}}, {id: 4, text: {param1: 4, param2: "test 4"}}];
+
+    console.log(getOrElse("???", simpleArr, 4));
+    console.log(getOrElse("???", arrOfObjects, 3, "id"));
+
+    console.log(getOrElse("???", arrOfObjectsWithDepth, {param1: 2, param2: "test 2"}, "text"));
+
+    /** output
+    
+    4
+    { id: 3, text: 'test 3' }
+    ???
+
+    */
+```
+##
+
 :x: **toMap** [in progress]
 - creates a map (New Map(key, value)) from an array
 
